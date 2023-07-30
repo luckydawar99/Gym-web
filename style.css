@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(1, 1, 1);
+    font-family: 'Roboto', 'sans-serif';
+    color: white,
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(1, 1, 14);
+    padding: 22px;
+    box-shadow: 0px 2px 6px 2px rgb(24, 24, 32);
+    color: white;
+}
+
+nav ul li a {
+    margin-inline: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav ul {
+    margin-right: 63px;
+    margin-top: 6px;
+}
+
+.logo {
+    font-size: 25px;
+    margin-left: 33px;
+    color: rgb(12, 248, 12);
+}
+
+ul li button {
+    width: 100px;
+    height: 33px;
+    background-color: rgb(0, 255, 0);
+    border: none;
+    color: white;
+    font-size: 18px;
+
+}
+
+ul li button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: rgb(27, 253, 27);
+    cursor: pointer;
+
+}
+
+ul li a:hover {
+    color: rgb(27, 253, 27);
+    border-bottom: 2px solid rgb(27, 253, 27);
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* main */
+
+.home {
+    display: flex;
+
+}
+
+.home img {
+    width: 49%;
+    margin-top: 110px;
+    margin-left: 124px;
+}
+
+
+.homeText {
+    margin-top: 160px;
+    margin-left: 45px;
+
+}
+
+.homeText h1 {
+    font-size: 75px;
+    color: rgb(2, 249, 2);
+}
+
+.homeText h3 {
+    margin-top: 22px;
+    font-size: 22px;
+    color: silver;
+}
+
+.homeText p {
+    margin-top: 22px;
+    color: silver;
+}
+
+.homeText button {
+    margin-top: 22px;
+    font-size: 22px;
+    width: 140px;
+    height: 40px;
+    color: white;
+    background-color: rgb(8, 255, 8);
+    border: none;
+}
+
+.homeText button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: rgb(27, 253, 27);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:768px) {
+    .home {
+        flex-direction: column;
+    }
+}
+
+/* --Program--- */
+.program {
+    width: 100%;
+}
+
+
+.program.row.head {
+    text-align: center;
+    margin: auto;
+    color: green;
+}
+
+.head h1 {
+    font-size: 55px;
+    padding-top: 13px;
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.head p {
+    color: silver;
+    padding-top: 5px;
+    margin-top: 9px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.ourProgram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.crd h3 {
+    font-size: 35px;
+    margin: 4px;
+    color: rgb(0, 255, 0);
+}
+
+.crd p {
+    font-size: 22px;
+    color: silver;
+
+}
+
+.crd {
+    flex: 1;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px rgb(28, 28, 45);
+    background-color: rgb(10, 9, 9);
+}
+
+.crd img {
+    width: 100%;
+    height: auto;
+
+}
+
+.crd img:hover {
+    width: 103%;
+}
+
+@media screen and (max-width:768px) {
+    .ourProgram {
+        flex-direction: column;
+    }
+}
+
+/*---plane--*/
+.meplane {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px rgb(28, 28, 45);
+    background-color: rgb(14, 13, 13);
+    text-align: center;
+
+}
+
+.card i {
+    font-size: 22px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+    color: orange;
+}
+
+.card h3 {
+    margin-top: 22px;
+    color: rgb(4, 255, 4);
+}
+
+.card h1 {
+    margin-top: 22px;
+    color: rgb(16, 253, 16);
+}
+
+.card p {
+    margin-top: 12px;
+    color: silver;
+}
+
+.card button {
+    margin-top: 22px;
+    width: 100px;
+    height: 33px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.card button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: rgb(18, 255, 18);
+    cursor: pointer;
+}
+
+.card:hover {
+    transition: 0.7s ease;
+    width: 310px;
+    height: 420px;
+    background-color: black;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .meplane {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*-- Blog--*/
+.blog {
+    width: 100%;
+}
+
+.ourBlog {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.blogCard {
+    width: 300px;
+    height: 415px;
+    margin: 52px 22px;
+    box-shadow: 0px 0px 5px 0px rgb(28, 28, 45);
+    background-color: rgb(10, 9, 9);
+}
+
+.blogCard:hover {
+    width: 310px;
+    height: 420px;
+
+}
+
+.blogCard img {
+    width: 100%;
+
+}
+
+.blogCard h3 {
+    margin-top: 22px;
+    font-size: 22px;
+    color: rgb(14, 255, 14);
+}
+
+
+.blogCard p {
+    margin-top: 15px;
+}
+
+.blogText {
+    margin-top: 12px;
+    margin-left: 3px;
+    color: silver;
+}
+
+.blogText a {
+    text-decoration: none;
+    width: 90px;
+    padding: 11px;
+    background-color: rgb(22, 255, 22);
+    color: white;
+    position: absolute;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .ourBlog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+/*-contact --*/
+.contact {
+    width: 100%;
+
+}
+
+.head h2 {
+    display: flex;
+    justify-content: center;
+    color: green;
+    font-size: 35px;
+    margin-top: 15px;
+
+}
+
+.contactPage {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contactText {
+    margin-left: 33px;
+    margin-top: 124px;
+}
+
+.contactText h1 {
+    color: rgb(36, 255, 36);
+    font-size: 55px;
+
+}
+
+.contactText h2 {
+    margin-top: 5px;
+    color: silver;
+    font-size: 30px;
+}
+
+.contactPage img {
+    width: 50%;
+    margin-top: 55px;
+    margin-left: -20px;
+}
+
+.contactUs {
+    text-align: center;
+}
+
+.contactUs h1 {
+    color: green;
+    margin-top: 22px;
+}
+
+.contactUs input {
+    width: 350px;
+    height: 33px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    padding: 2px;
+    margin-top: 15px;
+}
+
+.contactUs button {
+    width: 355px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size: 22px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+.contactUs button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: rgb(9, 255, 9);
+}
+
+@media screen and (max-width:768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+/*--footer-*/
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 53px;
+    padding: 8px;
+    box-shadow: 0px 2px 6px 4px rgb(39, 38, 38);
+}
+
+.footerText {
+    margin-inline: 53px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.footerText h2 {
+    margin-top: 11px;
+    color: rgb(22, 234, 22);
+}
+
+.footerText p {
+    margin-top: 11px;
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+}
